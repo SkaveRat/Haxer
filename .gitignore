@@ -1,4 +1,10 @@
 .idea
-.*iml
+*.iml
+*.png
+*.log
+
+*.blend?
+*.blend
+
+
 target/
-test.json
