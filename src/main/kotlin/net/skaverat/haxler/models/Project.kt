@@ -22,5 +22,11 @@ class Project(name: String, filepath: String) {
     val filepathProperty = SimpleStringProperty(this, "filepath", filepath)
     var filepath by filepathProperty
 
+    @JsonIgnore
+    val splitpartsProperty = SimpleStringProperty(this, "splitparts")
+    var splitparts by splitpartsProperty
 
+    @JsonIgnore
+    val resolutionProperty = SimpleStringProperty(this, "resolution")
+    var resolution by resolutionProperty
 }
